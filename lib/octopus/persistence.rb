@@ -12,6 +12,14 @@ module Octopus
       run_on_shard { super }
     end
 
+    def update(*args)
+      run_on_shard { super }
+    end
+
+    def update!(*args)
+      run_on_shard { super }
+    end
+
     def reload(*args)
       run_on_shard { super }
     end
